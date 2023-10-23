@@ -3,12 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
     <script src="script.js"></script>
     <link rel="stylesheet" href="styles.css">
-    
-    <title>Piedra, papel, tijera, lagarto, Spoke---------</title>
+    <title>Piedra, papel, tijera, lagarto, Spoke</title>
 </head>
+
 <body>
     
+     <div id="areajuego">
+        <Div class="opciones">   
+            <h1>Jugador</h1>
+            <div class="opcion" id="piedra">
+                <img src="img/piedra.png" alt="piedra" width="60px" >
+            </div>
+            <div class="opcion" id="papel">
+                <img src="img/papel.png" alt="papel"  width="60px">
+            </div>
+            <div class="opcion" id="tijeras">
+                <img src="img/tijeras.png" alt="tijeras" width="60px">
+            </div>
+            <div class="opcion" id="lagarto">
+                <img src="img/lagarto.png" alt="lagarto" width="60px">
+            </div>
+            <div class="opcion" id="spock">
+                <img src="img/spock.png" alt="spock" width="60px">
+            </div>
+        </Div>
+
+        <Div id="partida">
+            <div id="jugador">
+                <img src="img/piedra.png" alt="piedra" width="150px">
+            </div>
+            <div id="parametros">
+                <div >Resultado</div>
+                <div id="resultado">Has ganado</div>
+                <div id="vs">
+                    <img src="img/vs.png" alt="vs." width="100%">
+                </div>
+                <div id="puntuacion">Puntuación <br> <div id="puntos"> <span id="puntosJug">1</span> || <span id="puntosOr">3</span></div>
+                </div>
+            </div>
+            <div id="ordenador">
+                <img src="img/piedra.png" alt="piedra" width="150px">
+            </div>
+        </Div>
+
+        <Div class="opciones">
+            <h1>Ordenador</h1>
+            <div class="opcion" id="piedraOr">
+            <img src="img/piedra.png" alt="piedra" width="60px">
+            </div>
+            <div class="opcion" id="papelOr">
+            <img src="img/papel.png" alt="papel"  width="60px">
+            </div>
+            <div class="opcion" id="tijerasOr">
+            <img src="img/tijeras.png" alt="tijeras" width="60px">
+            </div>
+            <div class="opcion" id="lagartoOr">
+            <img src="img/lagarto.png" alt="lagarto" width="60px">
+            </div>
+            <div class="opcion" id="spockOr">
+            <img src="img/spock.png" alt="spock" width="60px">
+            </div>
+        </Div>
+    </div>
 </body>
 </html>

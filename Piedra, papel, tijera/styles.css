@@ -1,0 +1,113 @@
+/* body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(16, 14, 14, 0.476); 
+    z-index: -1; 
+} */
+
+body {
+    font-family: 'Play', sans-serif;
+    color: aliceblue;
+    background-image: url(img/fondo.png);
+    background-size: cover;   
+    display: flex;
+    justify-content: center;
+}
+
+#areajuego {
+    width: 80%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    display: flex;
+    justify-content: space-around;
+    padding: 1%;
+    background-color: #0a090ada;
+}
+
+.opciones {
+    width: 15%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.opcion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    margin: 5%;
+    background-color: #c541a6e8;
+    border-radius: 50%;
+    outline: 2px solid #f4e1ff;
+}
+
+.opcion img {
+    border-radius: 50%;
+}
+
+.opcion :hover {
+    cursor: pointer;
+    background-color: #674694;
+    box-shadow: 0 0 10px 10px rgba(255, 255, 255, 0.3);
+}
+
+#partida {
+    /* background-color: blueviolet; */
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#jugador {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+
+#ordenador {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+#parametros {
+    height: 100%;
+    margin: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    font-size: 3em;
+}
+#resultado {
+    margin-top: -10%;
+    font-size: 0.5em;
+}
+
+#vs {
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#titulonombre {
+    font-size: 2em;
+}
