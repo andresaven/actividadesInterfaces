@@ -58,6 +58,22 @@ body {
     box-shadow: 0 0 10px 10px rgba(255, 255, 255, 0.3);
 }
 
+.opcionOr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    margin: 5%;
+    background-color: #c541a6e8;
+    border-radius: 50%;
+    outline: 2px solid #f4e1ff;
+}
+
+.opcionElegida {
+    background-color: #674694;
+    box-shadow: 0 0 10px 10px rgba(255, 255, 255, 0.3);
+}
+
 #partida {
     /* background-color: blueviolet; */
     width: 50%;
@@ -98,6 +114,7 @@ body {
 #resultado {
     margin-top: -10%;
     font-size: 0.5em;
+    visibility: hidden;
 }
 
 #vs {
