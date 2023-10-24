@@ -1,3 +1,4 @@
+
 /* --- Declaración de variables --- */
 
 let piedra;
@@ -17,6 +18,7 @@ let opcionesOr;
 
 let jugador;
 let ordenador;
+let nombreElegido;
 
 let resultado;
 
@@ -29,6 +31,7 @@ let puntosOr;
 /* --- Inicialización de variables --- */
 
 function varInit() {
+
     piedra = document.getElementById("piedra");
     papel = document.getElementById("papel");
     tijera = document.getElementById("tijera");
@@ -46,6 +49,7 @@ function varInit() {
 
     jugador = document.getElementById("jugador");
     ordenador = document.getElementById("ordenador");
+    nombreElegido = document.getElementById("nombreElegido")
 
     resultado = document.getElementById("resultado");
 
@@ -56,9 +60,11 @@ function varInit() {
 }
 
 
-/* --- Selección del usuario --- */
+
+/* --- Listeners --- */
 
 function setListeners() {
+
     piedra.addEventListener("click", () => {
         unsetOther(piedra);
         playerSelection("piedra")
@@ -87,6 +93,7 @@ function setListeners() {
 }
 
 
+
 /* --- Desactivar el resto de selecciones --- */
 
 function unsetOther(opcion) {
@@ -98,11 +105,13 @@ function unsetOther(opcion) {
     };
 }
 
+
 /* --- Selección jugador --- */
 
 function playerSelection(selection) {
     jugador.innerHTML = `<img src="img/${selection}.png" alt="${selection}" width="150px">`;
-    jugador.style.visibility = "visible"
+    jugador.style.visibility = "visible";
+    ordenador.style.visibility = "hidden";
 }
 
 
@@ -171,78 +180,7 @@ function game(selection) {
     if (selection === computerSelection) {
         resultado.textContent = "Empate";
         resultado.style.visibility = "visible"; 
-    }else if (
-    //     switch (selection) {
-    //         case "piedra":
-    //             if (computerSelection === "papel" || computerSelection === "spock") {
-    //                 resultado.textContent = "Has perdido";
-    //                 resultado.style.visibility = "visible"; 
-    //                 puntosOr++;
-    //                 marcadorOr.textContent = puntosOr
-    //             } else {
-    //                 resultado.textContent = "¡Has ganado!";
-    //                 resultado.style.visibility = "visible"; 
-    //                 puntosJug++;
-    //                 marcadorJug.textContent = puntosJug
-    //             }
-    //             break;
-    //         case "papel":
-    //             if (computerSelection === "tijera" || computerSelection === "lagarto") {
-    //                 resultado.textContent = "Has perdido";
-    //                 resultado.style.visibility = "visible"; 
-    //                 puntosOr++;
-    //                 marcadorOr.textContent = puntosOr
-    //             } else {
-    //                 resultado.textContent = "¡Has ganado!";
-    //                 resultado.style.visibility = "visible"; 
-    //                 puntosJug++;
-    //                 marcadorJug.textContent = puntosJug
-    //             }
-    //             break;
-    //         case "tijera":
-    //             if (computerSelection === "piedra" || computerSelection === "spock") {
-    //                 resultado.textContent = "Has perdido";
-    //                 resultado.style.visibility = "visible"; 
-    //                 puntosOr++;
-    //                 marcadorOr.textContent = puntosOr
-    //             } else {
-    //                 resultado.textContent = "¡Has ganado!";
-    //                 resultado.style.visibility = "visible"; 
-    //                 puntosJug++;
-    //                 marcadorJug.textContent = puntosJug
-    //             }
-    //             break;
-    //         case "lagarto":
-    //             if (computerSelection === "tijera" || computerSelection === "piedra") {
-    //                 resultado.textContent = "Has perdido";
-    //                 resultado.style.visibility = "visible"; 
-    //                 puntosOr++;
-    //                 marcadorOr.textContent = puntosOr
-    //             } else {
-    //                 resultado.textContent = "¡Has ganado!";
-    //                 resultado.style.visibility = "visible"; 
-    //                 puntosJug++;
-    //                 marcadorJug.textContent = puntosJug
-    //             }
-    //             break;
-    //         case "spock":
-    //             if (computerSelection === "papel" || computerSelection === "lagarto") {
-    //                 resultado.textContent = "Has perdido";
-    //                 resultado.style.visibility = "visible"; 
-    //                 puntosOr++;
-    //                 marcadorOr.textContent = puntosOr
-    //             } else {
-    //                 resultado.textContent = "¡Has ganado!";
-    //                 resultado.style.visibility = "visible"; 
-    //                 puntosJug++;
-    //                 marcadorJug.textContent = puntosJug
-    //             }
-    //             break;
-
-    //     }
-    // } 
-        
-        
+    }else if (       
         (selection === "piedra" && computerSelection === "papel") || (selection === "piedra" && computerSelection === "spock") ||
 
         (selection === "papel" && computerSelection === "tijera") || (selection === "papel" && computerSelection === "lagarto") ||
@@ -259,19 +197,19 @@ function game(selection) {
         resultado.style.visibility = "visible"; 
 
         puntosOr++;
-        marcadorOr.textContent = puntosOr
+        marcadorOr.textContent = puntosOr;
     } else {
         resultado.textContent = "¡Has ganado!";
         resultado.style.visibility = "visible"; 
 
         puntosJug++;
-        marcadorJug.textContent = puntosJug
+        marcadorJug.textContent = puntosJug;
     }
 }
 
 /* --- Marcador --- */
 
-function scoreboard(resultado) {
+function reset(resultado) {
     
     
 }
@@ -283,4 +221,6 @@ function scoreboard(resultado) {
 window.addEventListener("load", () => {
     varInit();
     setListeners();
+    //Recupero el nombre almacenado en el .sessionStorage.
+    nombreElegido.textContent = sessionStorage.getItem("nombre");
 })

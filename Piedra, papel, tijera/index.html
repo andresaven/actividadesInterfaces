@@ -6,69 +6,26 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
-    <script src="script.js"></script>
+    <script src="script1.js"></script>
     <link rel="stylesheet" href="styles.css">
     <title>Piedra, papel, tijera, lagarto, Spoke</title>
+    
 </head>
 
-<body>
-    
-     <div id="areajuego">
-        <Div class="opciones">   
-            <h1>Jugador</h1>
-            <div class="opcion" id="piedra">
-                <img src="img/piedra.png" alt="piedra" width="60px" >
-            </div>
-            <div class="opcion" id="papel">
-                <img src="img/papel.png" alt="papel"  width="60px">
-            </div>
-            <div class="opcion" id="tijera">
-                <img src="img/tijera.png" alt="tijera" width="60px">
-            </div>
-            <div class="opcion" id="lagarto">
-                <img src="img/lagarto.png" alt="lagarto" width="60px">
-            </div>
-            <div class="opcion" id="spock">
-                <img src="img/spock.png" alt="spock" width="60px">
-            </div>
-        </Div>
+<header><h1>Piedra, papel, tijera, lagarto, Spock</h1>
+    <img src="img/piedra.png" alt="piedra" width="60px" >
+    <img src="img/papel.png" alt="papel"  width="60px">
+    <img src="img/tijera.png" alt="tijera" width="60px">
+    <img src="img/lagarto.png" alt="lagarto" width="60px">
+    <img src="img/spock.png" alt="spock" width="60px">
+</header>
 
-        <Div id="partida">
-            <div id="jugador">
-                <img src="img/piedra.png" alt="piedra" width="150px">
-            </div>
-            <div id="parametros">
-                <div>Resultado</div>
-                <div id="resultado">Has ganado</div>
-                <div id="vs">
-                    <img src="img/vs.png" alt="vs." width="100%">
-                </div>
-                <div id="puntuacion">Puntuación <br> <div id="puntos"> <span id="puntosJug">0</span> || <span id="puntosOr">0</span></div>
-                </div>
-            </div>
-            <div id="ordenador">
-                <img src="img/piedra.png" alt="piedra" width="150px">
-            </div>
-        </Div>
-
-        <Div class="opciones">
-            <h1>Ordenador</h1>
-            <div class="opcionOr" id="piedraOr">
-            <img src="img/piedra.png" alt="piedra" width="60px">
-            </div>
-            <div class="opcionOr" id="papelOr">
-            <img src="img/papel.png" alt="papel"  width="60px">
-            </div>
-            <div class="opcionOr" id="tijeraOr">
-            <img src="img/tijera.png" alt="tijera" width="60px">
-            </div>
-            <div class="opcionOr" id="lagartoOr">
-            <img src="img/lagarto.png" alt="lagarto" width="60px">
-            </div>
-            <div class="opcionOr" id="spockOr">
-            <img src="img/spock.png" alt="spock" width="60px">
-            </div>
-        </Div>
-    </div>
+<body id="bodyIndex">
+    <form id="introNombre" method="post">
+        <label for="nombre">Introduce tu nombre: </label>
+        <input type="text" id="nombre" maxlength="10">
+        <footer>De 2 a 10 caracteres alfanuméricos sin espacios</footer>
+        <button id="button" type="button" disabled >Jugar</button>
+    </form>
 </body>
 </html>
