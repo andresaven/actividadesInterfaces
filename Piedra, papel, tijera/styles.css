@@ -96,9 +96,9 @@ body {
     border-radius: 10%;
 }
 
-#resetButon:hover {
+#resetButton:hover {
     cursor: pointer;
-    box-shadow: 0 0 50px 5px #d667b6b3;
+    box-shadow: 0 0 20px 5px #0cf7d8;
 } 
 
 #areajuego {
