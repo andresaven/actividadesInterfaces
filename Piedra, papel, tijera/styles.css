@@ -1,15 +1,76 @@
-/* body::before {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(16, 14, 14, 0.476); 
-    z-index: -1; 
-} */
+/* Página de inicio */
+
+
+#bodyIndex {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    margin-top: 5vh;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+header h1 {
+    margin-bottom: 2vh;
+}
+
+header img {
+    margin: 0 2.5vw;
+}
+
+#introNombre {
+    background-color: #66469483;
+    margin: 5vh 20vw;
+    padding: 1em;
+    border-radius: 5%;
+    font-size: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#introNombre footer {
+    margin-top: 0.5em;
+    font-size: 0.4em;
+    color: #0f0424;
+}
+
+#nombre {
+    margin-top: 5vh;
+    background-color: #0f0424de;
+    font-family: 'Play', sans-serif;
+    font-size: 1em;
+    color: aliceblue;
+    border: none;
+    box-shadow: 0 0 10px 10px #d667b6b3;
+}
+
+#button {
+    margin-top: 5vh;
+    width: 10vw;
+    font-family: 'Play', sans-serif;
+    color: aliceblue;
+    font-size: 0.5em;
+    padding: 0.3em;
+    background-color: #0f0424de;
+    border: none;
+}
+
+
+#button:hover {
+    cursor: pointer;
+    box-shadow: 0 0 50px 5px #d667b6b3;
+} 
+
+
+
+
+/* Página del juego */
 
 body {
+    margin: 0;
     font-family: 'Play', sans-serif;
     color: aliceblue;
     background-image: url(img/fondo.png);
@@ -18,10 +79,31 @@ body {
     justify-content: center;
 }
 
+#reset {
+    position: absolute;
+    bottom: 5vh;
+    right: 2vw;
+    
+}
+
+#resetButton {
+    font-family: 'Play', sans-serif;
+    color: aliceblue;
+    font-size: 1em;
+    padding: 0.3em;
+    background-color: #c541a6f9;
+    border: none;
+    border-radius: 10%;
+}
+
+#resetButon:hover {
+    cursor: pointer;
+    box-shadow: 0 0 50px 5px #d667b6b3;
+} 
+
 #areajuego {
-    width: 80%;
-    margin-top: 3%;
-    margin-bottom: 3%;
+    width: 75%;
+    margin-top: 5vh;
     display: flex;
     justify-content: space-around;
     padding: 1%;
@@ -125,6 +207,4 @@ body {
 }
 
 
-#titulonombre {
-    font-size: 2em;
-}
+
