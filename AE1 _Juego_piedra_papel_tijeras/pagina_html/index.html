@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/estilos_css/style.css">
+    <script src="/codigo_js/script.js"></script>
+    <title>Piedra, papel, tijera, lagarto o spock</title>
+</head>
+
+<body>  
+
+    <header>
+        <h1>¿Jugamos?</h1>
+    </header>
+    <main>        
+        <div>
+            <form id="registro">            
+                <label for="usuario">Introduce tu nombre: </label>     
+                <input  type="text" id="usuario"  placeholder="Nombre" required ></br>                    
+                <button type ="button" id="botonInicio" >Iniciar Juego</button>                                 
+            </form>
+        </div>
+
+        <div id="mostrarJuego">
+            
+            <div id="jugador">
+                <label for = "nombreJugador">Jugador:</label>       
+                <input id="nombreJugador"/> </br>
+                <div>
+                    <img id="imgJugador" src="/imagenes/jugador.png"/>
+                </div>
+            </div>
+            
+
+            <div class="opcionJugador">                
+                
+                <button id="botonPiedra" class="opcionBoton">
+                    <img id="imgPiedra"src="/imagenes/piedra.png" />
+                </button>                    
+                <button id="botonPapel" class="opcionBoton">
+                    <img src="/imagenes/papel.png"/>
+                </button>
+                <button id="botonTijeras" class="opcionBoton">
+                    <img src="/imagenes/tijeras.png" />
+                </button>        
+                <button id="botonLagarto" class="opcionBoton">
+                    <img src="/imagenes/lagarto.png" />
+                </button>
+                <button id="botonSpock" class="opcionBoton">
+                    <img src="/imagenes/spock.png" />
+                </button>
+            
+            </div>
+
+            <div id="resultado">
+                <h2>Marcador</h2>
+                <span id="resultadoJugador">0</span>
+                <span>/</span>
+                <span id="resultadoOrdenador">0</span>
+            </div>                    
+           
+            <div id="ordenador">
+                <label for="ordenador">Ordenador</label>
+                <div class="opcionOrdenador">
+                    </br>
+                    <div >
+                        <img id="imgOrdenador" src="/imagenes/ordenador.png"></img>
+                    </div>
+                </div>
+            </div>
+            </br>
+
+            <div class="cajaResultado">
+                <h3>Resultado:</h3>
+                <div id="imprimirResultado"></div>
+               <button id="reiniciar">Jugar de nuevo</button>
+            </div> 
+        </div>
+       
+        
+    </main>
+</body>
+</html>
