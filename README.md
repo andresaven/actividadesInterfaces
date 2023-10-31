@@ -7,17 +7,33 @@ Este código presenta una implementación del juego "Piedra, Papel, Tijera, Laga
 ## Funcionalidad del juego
 
 1. El usuario ingresa su nombre en el campo correspondiente.
+   
 ![Inicio](Piedra,%20papel,%20tijera/resources/capturas/1.png)
-2. Una vez validado el nombre, el jugador puede empezar el juego.
+
+3. Una vez validado el nombre, el jugador puede empezar el juego.
+   
+![Jugador](Piedra,%20papel,%20tijera/resources/capturas/1.png)
+
+5. El jugador selecciona una de las opciones (Piedra, Papel, Tijera, Lagarto, Spock).
+   
+![Texto alternativo](Piedra,%20papel,%20tijera/resources/capturas/1.png)
+
+7. La computadora hace su elección aleatoriamente.
+   
+![Texto alternativo](Piedra,%20papel,%20tijera/resources/capturas/1.png)
+
+9. Se muestra el resultado del juego y se actualiza el marcador.
+    
+![Texto alternativo](Piedra,%20papel,%20tijera/resources/capturas/1.png)
+
+11. Con el botón reiniciar, el juego regresa a la pantalla de introducción de nombre de jugador y resetea los valores de la partida.
+    
 ![Texto alternativo](URL-de-la-imagen)
-3. El jugador selecciona una de las opciones (Piedra, Papel, Tijera, Lagarto, Spock).
-![Texto alternativo](URL-de-la-imagen)
-4. La computadora hace su elección aleatoriamente.
-![Texto alternativo](URL-de-la-imagen)
-5. Se muestra el resultado del juego y se actualiza el marcador.
-![Texto alternativo](URL-de-la-imagen)
-6. Con el botón reiniciar, el juego regresa a la pantalla de introducción de nombre de jugador y resetea los valores de la partida.
-![Texto alternativo](URL-de-la-imagen)
+
+<video width="320" height="240" controls>
+  <source src="Piedra,%20papel,%20tijera/resources/Muestra%20de%20Funcionalidad.mp4" type="video/mp4">
+  Tu navegador no soporta el elemento de vídeo.
+</video>
 
 ## Estructura del código
 
