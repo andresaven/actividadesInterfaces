@@ -207,14 +207,6 @@ function game(selection) {
     }
 }
 
-/* --- Marcador --- */
-
-function reset(resultado) {
-    
-    
-}
-
-
 
 /* --- Carga --- */
 
