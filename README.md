@@ -2,7 +2,7 @@
 
 ## Descripción
 
-Este código presenta una implementación del juego "Piedra, Papel, Tijera, Lagarto, Spock". A través de la interacción con la interfaz de usuario, el jugador puede seleccionar una de las opciones y competir contra la elección aleatoria de la computadora. El juego determina el ganador, el perdedor o un empate según las reglas definidas, y muestra el resultado al jugador.
+Este código presenta una implementación del juego "Piedra, Papel, Tijera, Lagarto, Spock". A través de la interacción con la interfaz de usuario, el jugador puede seleccionar una de las opciones y competir contra la elección aleatoria del ordenador. El juego determina el ganador, el perdedor o un empate según las reglas definidas, y muestra el resultado al jugador.
 
 ## Funcionalidad del juego
 
