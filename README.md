@@ -12,24 +12,24 @@ Este código presenta una implementación del juego "Piedra, Papel, Tijera, Laga
 
 2. Una vez validado el nombre, el jugador puede empezar el juego.
    
-![Jugador](Piedra,%20papel,%20tijera/resources/capturas/1.png)
+![Jugador](Piedra,%20papel,%20tijera/resources/capturas/3.png)
 
 3. El jugador selecciona una de las opciones (Piedra, Papel, Tijera, Lagarto, Spock).
+   Ésta se queda fijada tanto en las opciones como en el centro de la pantalla.
    
-![Texto alternativo](Piedra,%20papel,%20tijera/resources/capturas/1.png)
+![Opciones](Piedra,%20papel,%20tijera/resources/capturas/5.png)
 
-4. La computadora hace su elección aleatoriamente.
+4. El ordenador hace su elección aleatoriamente, se muestra el resultado del juego y se actualiza el marcador.
+   La opción del ordenador se quedará fijada en las opciones y en el centro de la pantalla.
    
-![Texto alternativo](Piedra,%20papel,%20tijera/resources/capturas/1.png)
+![Opcion Ordenador](Piedra,%20papel,%20tijera/resources/capturas/6.png)
 
-5. Se muestra el resultado del juego y se actualiza el marcador.
+5. Con el botón reiniciar, el juego regresa a la pantalla de introducción de nombre de jugador y resetea los valores de la partida.
     
-![Texto alternativo](Piedra,%20papel,%20tijera/resources/capturas/1.png)
+![Reinicio](Piedra,%20papel,%20tijera/resources/capturas/9.png)
 
-6. Con el botón reiniciar, el juego regresa a la pantalla de introducción de nombre de jugador y resetea los valores de la partida.
-    
-![Texto alternativo](Piedra,%20papel,%20tijera/resources/capturas/1.png)
 
+## Video explicativo de la funcionalidad del juego.
 
 https://github.com/andresaven/actividadesInterfaces/assets/122389484/d70145b7-49f5-4e7a-94ec-b476baece717
 
