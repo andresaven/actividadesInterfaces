@@ -7,7 +7,7 @@ Este código presenta una implementación del juego "Piedra, Papel, Tijera, Laga
 ## Funcionalidad del juego
 
 1. El usuario ingresa su nombre en el campo correspondiente.
-![Inicio](Piedra, papel, tijera/resources/capturas/1.png)
+![Inicio](/Piedra, papel, tijera/resources/capturas/1.png)
 2. Una vez validado el nombre, el jugador puede empezar el juego.
 ![Texto alternativo](URL-de-la-imagen)
 3. El jugador selecciona una de las opciones (Piedra, Papel, Tijera, Lagarto, Spock).
