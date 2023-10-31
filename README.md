@@ -30,10 +30,9 @@ Este código presenta una implementación del juego "Piedra, Papel, Tijera, Laga
     
 ![Texto alternativo](URL-de-la-imagen)
 
-<video width="320" height="240" controls>
-  <source src="Piedra,%20papel,%20tijera/resources/Muestra%20de%20Funcionalidad.mp4" type="video/mp4">
-  Tu navegador no soporta el elemento de vídeo.
-</video>
+
+ ![](Piedra,%20papel,%20tijera/resources/Muestra%20de%20Funcionalidad.mp4)
+
 
 ## Estructura del código
 
