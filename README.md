@@ -31,7 +31,7 @@ Este código presenta una implementación del juego "Piedra, Papel, Tijera, Laga
 ![Texto alternativo](URL-de-la-imagen)
 
 
- ![](Piedra,%20papel,%20tijera/resources/Muestra%20de%20Funcionalidad.mp4)
+ ![Video](Piedra,%20papel,%20tijera/resources/Muestra%20de%20Funcionalidad.mp4)
 
 
 ## Estructura del código
