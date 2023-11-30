@@ -1,4 +1,4 @@
-# README.md
+# Proyecto Piedra, papel, tijera
 
 ## Descripción
 
